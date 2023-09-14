@@ -16,6 +16,9 @@
   --secondary-accent: #d9e6e7;
 }
 
+a {
+  @apply decoration-0;
+}
 .bg-primary {
   background: url("../images/bg-main@2x.png"), var(--primary-light);
   background-repeat: repeat;
@@ -93,7 +96,7 @@
 
 /* Section Bar Shadow */
 .bar {
-  @apply w-full h-2 md:h-3 ;
+  @apply w-full h-2 md:h-3;
   background: var(--primary-light);
   box-shadow: -5px -5px 5px 0px #fbfbfb inset, 5px 5px 5px 0px #c5c5c5 inset;
 }
@@ -107,4 +110,72 @@
 .text-secondary {
   color: var(--Secondary-dark);
   text-shadow: -1px -1px 3px 0px #fbfbfb inset, 1px 1px 3px 0px #c5c5c5 inset;
+}
+
+/*------------------------------------------------------
+ Text Link Animations
+------------------------------------------------------*/
+
+.underline {
+  @apply z-10 relative align-middle inline-block text-[--primary-light] transition-colors duration-100;
+}
+
+.underline:hover {
+  @apply text-[--secondary-light];
+}
+
+.underline::before {
+  content: "";
+  transition: cubic-bezier(0.13, 0.78, 0.38, 0.98);
+  @apply -z-10 absolute bottom-[5%] left-0 w-full h-[1px] -mb-1 bg-[--secondary-light] scale-x-0 origin-bottom-left duration-300;
+}
+
+.underline:hover::before {
+  @apply scale-x-100 origin-top-left;
+}
+
+/*------------------------------------------------------
+ Hamburger Menu
+------------------------------------------------------*/
+.hamburger {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  /* transform: rotate(90deg); */
+}
+
+/* Three Lines */
+.open > .hamburger-top {
+  transform: rotate(45deg) translateX(6px) translateY(6px);
+}
+.open > .hamburger-middle {
+  display: none;
+}
+.open > .hamburger-bottom {
+  transform: rotate(-45deg) translateX(-6px) translateY(6px);
 }
