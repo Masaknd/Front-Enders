@@ -34,6 +34,10 @@
   text-wrap: balance;
 }
 
+.section-container {
+  @apply max-w-7xl mx-auto pt-8 md:pt-20 pb-8 md:pb-16 lg:pb-32 px-6;
+}
+
 /*------------------------------------------------------
  Components Styles
 ------------------------------------------------------*/
