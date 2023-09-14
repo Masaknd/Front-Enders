@@ -38,6 +38,10 @@
   @apply max-w-7xl mx-auto pt-8 md:pt-20 pb-8 md:pb-16 lg:pb-32 px-6;
 }
 
+.flex-wrapper {
+  @apply flex flex-col items-center text-center space-y-2 md:space-y-6 pb-12;
+}
+
 /*------------------------------------------------------
  Components Styles
 ------------------------------------------------------*/
@@ -73,13 +77,13 @@
 }
 
 /* Item Logo Round */
-.rounded-logo{
-  @apply w-16 h-16 rounded-full
+.rounded-logo {
+  @apply w-16 h-16 rounded-full;
 }
 
 /* Item Logo Rectangle */
 .rectangle-logo {
-  @apply rounded-md px-6 py-4
+  @apply rounded-md px-6 py-4;
 }
 /* Item Logo Shadow */
 .item-logo {
