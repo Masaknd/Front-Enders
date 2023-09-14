@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&family=Hanuman:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+
+    <title>Webpack5 with TailwindCSS</title>
+  </head>
+
+  <body class="w-[1440px] h-[14932px] relative">
+    <!-- Header -->
+    <header class="w-[1440px] h-[60px] left-0 top-0 absolute">
+      <div class="left-[202px] top-[18px] absolute text-center text-stone-500 text-[32px] font-bold font-logo leading-7">Front-Enders</div>
+      <div class="w-[151px] h-[60px] left-[936px] top-0 absolute bg-neutral-200 shadow-inner"></div>
+      <div class="w-[151px] h-[60px] left-[1087px] top-0 absolute bg-neutral-200 shadow-inner"></div>
+      <div class="nav-btn left-[994px] top-[18px] absolute text-stone-500 text-base font-medium font-sans leading-normal">Dev</div>
+      <div class="nav-btn left-[1131px] top-[18px] absolute text-stone-500 text-base font-medium font-sans leading-normal">Design</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="w-[1440px] h-[802px] left-0 top-[60px] absolute justify-center items-center inline-flex">
+      <div class="w-[1440px] h-[802px] relative">
+        <div class="w-[1440px] h-[802px] left-[270px] top-[100px] absolute"><img src="../images/hero-img.svg" alt="">
+        </div>
+        <div class="w-[506px] h-[190.76px] left-[732px] top-[242.04px] absolute text-stone-500 text-5xl font-normal font-serif leading-[62.40px]">Handful-tools for Front-End Developers & Designers</div>
+        <div class="w-[612px] h-[27.69px] left-[732px] top-[463.56px] absolute text-stone-500 text-lg font-medium font-jp leading-[27px]">フロントエンドデベトッパーとデザイナーのための 便利ツール</div>
+      </div>
+    </section>
+
+    <!-- bar -->
+    <div class="w-[1440px] h-2.5 left-0 top-[862px] absolute bg-neutral-200 justify-center items-center inline-flex">
+      <div class="w-[1440px] h-2.5 bg-neutral-200 shadow-inner"></div>
+    </div>
+
+    <!-- Dev Section -->
+    <section class="h-[913px] px-24 pt-[72px] pb-[120px] left-0 top-[871px] absolute flex-col justify-start items-center gap-10 inline-flex">
+      <div class="h-[171px] relative">
+        <div class="w-[277px] h-[79px] pl-[54px] pr-[55px] pt-[15px] pb-4 left-0 top-[92px] absolute justify-center items-center inline-flex">
+          <img src="../images/dev_icon.svg" alt="">
+          <div class="text-center text-primary text-5xl font-bold font-logo leading-[48px]">Dev Tools</div>
+        </div>
+      </div>
+      <div class="w-[1248px] h-[510px] relative">
+        <div class="w-[1248px] h-[243px] left-0 top-0 absolute">
+          <div class="w-[400px] h-[243px] p-7 left-0 top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Visual Studio Code</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[424px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Pieces</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[848px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Cacher</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+        <div class="w-[1248px] h-[243px] left-0 top-[267px] absolute">
+          <div class="w-[400px] h-[243px] p-7 left-0 top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">CodePen</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[424px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">CodeSandbox</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[848px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Dev Samples</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bar -->
+    <div class="w-[1440px] h-2.5 left-[-1px] top-[1784px] absolute bg-neutral-200 justify-center items-center inline-flex">
+      <div class="w-[1440px] h-2.5 bg-neutral-200 shadow-inner"></div>
+    </div>
+
+    <!-- HTML Section -->
+    <section class="sub-bg h-[646px] px-24 pt-[72px] pb-[120px] left-[-1px] top-[1794px] absolute flex-col justify-start items-center gap-10 inline-flex">
+      <div class="w-[277px] h-[171px] relative">
+        <div class="w-[277px] h-[79px] pt-[15px] pb-4 left-0 top-[92px] absolute justify-center items-center inline-flex">
+          <img src="../images/html_icon.png" alt="">
+          <p class="text-center text-secondary text-5xl font-bold font-logo leading-[48px]">HTML Resources</p>
+        </div>
+      </div>
+      <div class="w-[1248px] h-[243px] relative">
+        <div class="w-[400px] h-[243px] left-0 top-0 absolute justify-center items-center inline-flex">
+          <div class="w-[400px] p-7 bg-[--Secondary-dark] rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">HTML5 Reference | MDN</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+        <div class="w-[400px] h-[243px] left-[424px] top-0 absolute justify-center items-center inline-flex">
+          <div class="w-[400px] p-7 bg-[--Secondary-dark] rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">HTML Entity Reference CSS-Tricks</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+        <div class="w-[400px] h-[243px] left-[848px] top-0 absolute justify-center items-center inline-flex">
+          <div class="w-[400px] p-7 bg-[--Secondary-dark] rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Lorem</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bar -->
+    <div class="w-[1440px] h-2.5 left-[-1px] top-[2440px] absolute bg-neutral-200 justify-center items-center inline-flex">
+      <div class="w-[1440px] h-2.5 bg-neutral-200 shadow-inner"></div>
+    </div>
+
+    <!-- CSS Section -->
+    <section class="h-[1447px] px-24 pt-[72px] pb-[120px] left-[-1px] top-[2450px] absolute flex-col justify-start items-center gap-10 inline-flex">
+      <div class="w-[277px] h-[171px] relative">
+        <div class="w-[277px] h-[79px] pl-[5px] pr-1.5 pt-[15px] pb-4 left-0 top-[92px] absolute justify-center items-center inline-flex">
+          <img src="../images/css_icon.svg" alt="">
+          <div class="text-center text-neutral-200 text-5xl font-bold font-logo leading-[48px]">CSS Resources</div>
+        </div>
+      </div>
+      <div class="w-[1248px] h-[1044px] relative">
+        <div class="w-[1248px] h-[243px] left-0 top-0 absolute">
+          <div class="w-[400px] h-[243px] p-7 left-0 top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">CSS Reference | MDN</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[424px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">CSS Reference | Codrops</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[848px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Can I use?</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+        <div class="w-[1248px] h-[243px] left-0 top-[267px] absolute">
+          <div class="w-[400px] h-[243px] p-7 left-0 top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">100L5</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[424px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Griddy</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[848px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Neumorphism.io</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+        <div class="w-[1248px] h-[243px] left-0 top-[534px] absolute">
+          <div class="w-[400px] h-[243px] p-7 left-0 top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Beautiful CSS box-shadow Examples</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[424px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Smooth Shadow</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[848px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Simplecss.eu</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+        <div class="w-[1248px] h-[243px] left-0 top-[801px] absolute">
+          <div class="w-[400px] h-[243px] p-7 left-0 top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Dart Sass</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[424px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">BEM</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[848px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Lorem</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bar -->
+    <div class="w-[1440px] h-2.5 left-[-1px] top-[3897px] absolute bg-neutral-200 justify-center items-center inline-flex">
+      <div class="w-[1440px] h-2.5 bg-neutral-200 shadow-inner"></div>
+    </div>
+
+    <!-- JS Section -->
+    <section class="sub-bg h-[646px] px-24 pt-[72px] pb-[120px] left-[-1px] top-[3907px] absolute flex-col justify-start items-center gap-10 inline-flex">
+      <div class="h-[171px] relative">
+        <div class="w-[277px] h-[79px] pt-[15px] pb-4 left-0 top-[92px] absolute justify-center items-center inline-flex">
+          <img src="../images/js_icon.svg" alt="">
+          <div class="text-center text-gray-300 text-5xl font-bold font-logo leading-[48px]">Javascript Resources</div>
+        </div>
+      </div>
+      <div class="w-[1248px] h-[243px] relative">
+        <div class="w-[400px] h-[243px] left-0 top-0 absolute justify-center items-center inline-flex">
+          <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Javascript Reference | MDN</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+        <div class="w-[400px] h-[243px] left-[424px] top-0 absolute justify-center items-center inline-flex">
+          <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">DOM manipulation Reference | MDN</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+        <div class="w-[400px] h-[243px] left-[848px] top-0 absolute justify-center items-center inline-flex">
+          <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Can I use?</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bar -->
+    <div class="w-[1440px] h-2.5 left-[-1px] top-[4553px] absolute bg-neutral-200 justify-center items-center inline-flex">
+      <div class="w-[1440px] h-2.5 bg-neutral-200 shadow-inner"></div>
+    </div>
+
+    <!-- Images Section -->
+    <section class="h-[1180px] px-24 pt-[72px] pb-[120px] left-0 top-[4654px] absolute flex-col justify-start items-center gap-10 inline-flex">
+      <div class="h-[171px] relative">
+        <div class="w-[277px] h-[79px] pt-[15px] pb-4 left-0 top-[92px] absolute justify-center items-center inline-flex">
+          <img src="../images/camera_icon.svg" alt="">
+          <div class="text-center text-neutral-200 text-5xl font-bold font-logo leading-[48px]">Images & Videos</div>
+        </div>
+      </div>
+      <div class="w-[1248px] h-[777px] relative">
+        <div class="w-[1248px] h-[243px] left-0 top-0 absolute">
+          <div class="w-[400px] h-[243px] p-7 left-0 top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Unsplash</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[424px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">O-DAN</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[848px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">500px</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+        <div class="w-[1248px] h-[243px] left-0 top-[267px] absolute">
+          <div class="w-[400px] h-[243px] p-7 left-0 top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">rawpixel</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[424px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">nappy</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[848px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Burst</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+        <div class="w-[1248px] h-[243px] left-0 top-[534px] absolute">
+          <div class="w-[400px] h-[243px] p-7 left-0 top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">ResourceBoy</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[424px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Foodiesfeed</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[848px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Coverr</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bar -->
+    <div class="w-[1440px] h-2.5 left-0 top-[5834px] absolute bg-neutral-200 justify-center items-center inline-flex">
+      <div class="w-[1440px] h-2.5 bg-neutral-200 shadow-inner"></div>
+    </div>
+
+    <!-- Fonts Section -->
+    <section class="sub-bg h-[921px] px-24 pt-[72px] pb-[120px] left-0 top-[5844px] absolute flex-col justify-start items-center gap-10 inline-flex">
+      <div class="w-[277px] h-[179px] relative">
+        <div class="w-[277px] h-[79px] pt-[15px] pb-4 left-0 top-[100px] absolute justify-center items-center inline-flex">
+          <div class="text-center text-gray-300 text-5xl font-bold font-logo leading-[48px]">Fonts & Typography Tools</div>
+        </div>
+      </div>
+      <div class="w-[1248px] h-[510px] relative">
+        <div class="w-[1248px] h-[243px] left-0 top-0 absolute">
+          <div class="w-[400px] h-[243px] left-0 top-0 absolute justify-center items-center inline-flex">
+            <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+              <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+              <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Google Fonts</div>
+              <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+            </div>
+          </div>
+          <div class="w-[400px] h-[243px] left-[424px] top-0 absolute justify-center items-center inline-flex">
+            <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+              <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+              <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Fontshare</div>
+              <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+            </div>
+          </div>
+          <div class="w-[400px] h-[243px] left-[848px] top-0 absolute justify-center items-center inline-flex">
+            <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+              <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+              <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Font Squirrel</div>
+              <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[1248px] h-[243px] left-0 top-[267px] absolute">
+          <div class="w-[400px] h-[243px] left-0 top-0 absolute justify-center items-center inline-flex">
+            <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+              <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+              <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">MyFonts</div>
+              <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+            </div>
+          </div>
+          <div class="w-[400px] h-[243px] left-[424px] top-0 absolute justify-center items-center inline-flex">
+            <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+              <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+              <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">iFonts</div>
+              <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+            </div>
+          </div>
+          <div class="w-[400px] h-[243px] left-[848px] top-0 absolute justify-center items-center inline-flex">
+            <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+              <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+              <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Lorem</div>
+              <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bar -->
+    <div class="w-[1440px] h-2.5 left-0 top-[6765px] absolute bg-neutral-200 justify-center items-center inline-flex">
+      <div class="w-[1440px] h-2.5 bg-neutral-200 shadow-inner"></div>
+    </div>
+
+    <!-- Icons Section -->
+    <section class="h-[921px] px-24 pt-[72px] pb-[120px] left-0 top-[6775px] absolute flex-col justify-start items-center gap-10 inline-flex">
+      <div class="h-[179px] relative">
+        <div class="w-[277px] h-[79px] pl-[19px] pr-5 pt-[15px] pb-4 left-0 top-[100px] absolute justify-center items-center inline-flex">
+          <div class="text-center text-neutral-200 text-5xl font-bold font-logo leading-[48px]">Icons & Tools</div>
+        </div>
+      </div>
+      <div class="w-[1248px] h-[510px] relative">
+        <div class="w-[1248px] h-[243px] left-0 top-0 absolute">
+          <div class="w-[400px] h-[243px] p-7 left-0 top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Font Awesome</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[424px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">LineIcons</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[848px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Icons8</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+        <div class="w-[1248px] h-[243px] left-0 top-[267px] absolute">
+          <div class="w-[400px] h-[243px] p-7 left-0 top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Material Icon</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[424px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Lorem</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[848px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Lorem</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bar -->
+    <div class="w-[1440px] h-2.5 left-0 top-[7696px] absolute bg-neutral-200 justify-center items-center inline-flex">
+      <div class="w-[1440px] h-2.5 bg-neutral-200 shadow-inner"></div>
+    </div>
+
+    <!-- Color Section -->
+    <section class="sub-bg h-[921px] px-24 pt-[72px] pb-[120px] left-[3px] top-[7706px] absolute flex-col justify-start items-center gap-10 inline-flex">
+      <div class="w-[277px] h-[179px] relative">
+        <div class="w-[277px] h-[79px] pl-[38px] pr-[39px] pt-[15px] pb-4 left-0 top-[100px] absolute justify-center items-center inline-flex">
+          <div class="text-center text-gray-300 text-5xl font-bold font-logo leading-[48px]">Color Tools</div>
+        </div>
+      </div>
+      <div class="w-[1248px] h-[510px] relative">
+        <div class="w-[1248px] h-[243px] left-0 top-0 absolute">
+          <div class="w-[400px] h-[243px] left-0 top-0 absolute justify-center items-center inline-flex">
+            <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+              <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+              <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Coolors</div>
+              <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+            </div>
+          </div>
+          <div class="w-[400px] h-[243px] left-[424px] top-0 absolute justify-center items-center inline-flex">
+            <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+              <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+              <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">WebAIM</div>
+              <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+            </div>
+          </div>
+          <div class="w-[400px] h-[243px] left-[848px] top-0 absolute justify-center items-center inline-flex">
+            <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+              <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+              <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Color Safe</div>
+              <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[1248px] h-[243px] left-0 top-[267px] absolute">
+          <div class="w-[400px] h-[243px] left-0 top-0 absolute justify-center items-center inline-flex">
+            <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+              <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+              <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Brand Palette</div>
+              <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+            </div>
+          </div>
+          <div class="w-[400px] h-[243px] left-[424px] top-0 absolute justify-center items-center inline-flex">
+            <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+              <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+              <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Color Mind</div>
+              <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+            </div>
+          </div>
+          <div class="w-[400px] h-[243px] left-[848px] top-0 absolute justify-center items-center inline-flex">
+            <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+              <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+              <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Gradient Hunt</div>
+              <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bar -->
+    <div class="w-[1440px] h-2.5 left-0 top-[8627px] absolute bg-neutral-200 justify-center items-center inline-flex">
+      <div class="w-[1440px] h-2.5 bg-neutral-200 shadow-inner"></div>
+    </div>
+
+    <!-- Design Section -->
+    <section class="h-[1455px] px-24 pt-[72px] pb-[120px] left-0 top-[8637px] absolute flex-col justify-start items-center gap-10 inline-flex">
+      <div class="h-[179px] relative">
+        <div class="w-[277px] h-[79px] pt-[15px] pb-4 left-0 top-[100px] absolute justify-center items-center inline-flex">
+          <div class="text-center text-neutral-200 text-5xl font-bold font-logo leading-[48px]">Design Inspiration</div>
+        </div>
+      </div>
+      <div class="w-[1248px] h-[1044px] relative">
+        <div class="w-[1248px] h-[243px] left-0 top-0 absolute">
+          <div class="w-[400px] h-[243px] p-7 left-0 top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Awwwards</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[424px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">FWA</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[848px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Dribbble</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+        <div class="w-[1248px] h-[243px] left-0 top-[267px] absolute">
+          <div class="w-[400px] h-[243px] p-7 left-0 top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Pinterest</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[424px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Modulesss</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[848px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">1GUU</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+        <div class="w-[1248px] h-[243px] left-0 top-[534px] absolute">
+          <div class="w-[400px] h-[243px] p-7 left-0 top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">S5-Style</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[424px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">81-web.com</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[848px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Muuuuu.org</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+        <div class="w-[1248px] h-[243px] left-0 top-[801px] absolute">
+          <div class="w-[400px] h-[243px] p-7 left-0 top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Brilliant Design Collect</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[424px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">SANKOU!</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[848px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Lorem</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bar -->
+    <div class="w-[1440px] h-2.5 left-0 top-[10092px] absolute bg-neutral-200 justify-center items-center inline-flex">
+      <div class="w-[1440px] h-2.5 bg-neutral-200 shadow-inner"></div>
+    </div>
+
+    <!-- Interaction Section -->
+    <section class="sub-bg h-[654px] px-24 pt-[72px] pb-[120px] left-0 top-[10102px] absolute flex-col justify-start items-center gap-10 inline-flex">
+      <div class="h-[179px] relative">
+        <div class="w-[277px] h-[79px] pt-[15px] pb-4 left-0 top-[100px] absolute justify-center items-center inline-flex">
+          <div class="text-center text-gray-300 text-5xl font-bold font-logo leading-[48px]">Interaction Design Resources</div>
+        </div>
+      </div>
+      <div class="w-[1248px] h-[243px] relative">
+        <div class="w-[400px] h-[243px] left-0 top-0 absolute justify-center items-center inline-flex">
+          <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Codrops</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+        <div class="w-[400px] h-[243px] left-[424px] top-0 absolute justify-center items-center inline-flex">
+          <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Lorem</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+        <div class="w-[400px] h-[243px] left-[848px] top-0 absolute justify-center items-center inline-flex">
+          <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Lorem</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bar -->
+    <div class="w-[1440px] h-2.5 left-0 top-[10756px] absolute bg-neutral-200 justify-center items-center inline-flex">
+      <div class="w-[1440px] h-2.5 bg-neutral-200 shadow-inner"></div>
+    </div>
+
+    <!-- Components Section -->
+    <section class="h-[654px] px-24 pt-[72px] pb-[120px] left-0 top-[10766px] absolute flex-col justify-start items-center gap-10 inline-flex">
+      <div class="h-[179px] relative">
+        <div class="w-[277px] h-[79px] pt-[15px] pb-4 left-0 top-[100px] absolute justify-center items-center inline-flex">
+          <div class="text-center text-neutral-200 text-5xl font-bold font-logo leading-[48px]">Component Design</div>
+        </div>
+      </div>
+      <div class="w-[1248px] relative">
+        <div class="w-[400px] h-[243px] p-7 left-0 top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+          <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+          <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">LP ARCHIVE</div>
+          <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+        </div>
+        <div class="w-[400px] h-[243px] p-7 left-[424px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+          <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+          <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Landingfolio</div>
+          <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+        </div>
+        <div class="w-[400px] h-[243px] p-7 left-[848px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+          <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+          <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Codyhouse.co</div>
+          <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bar -->
+    <div class="w-[1440px] h-2.5 left-0 top-[11420px] absolute bg-neutral-200 justify-center items-center inline-flex">
+      <div class="w-[1440px] h-2.5 bg-neutral-200 shadow-inner"></div>
+    </div>
+
+    <!-- Illustration Section -->
+    <section class="sub-bg h-[1188px] px-24 pt-[72px] pb-[120px] left-0 top-[11430px] absolute flex-col justify-start items-center gap-10 inline-flex">
+      <div class="w-[277px] h-[179px] relative">
+        <div class="w-[277px] h-[79px] pt-[15px] pb-4 left-0 top-[100px] absolute justify-center items-center inline-flex">
+          <div class="text-center text-gray-300 text-5xl font-bold font-logo leading-[48px]">Illustration Resources</div>
+        </div>
+      </div>
+      <div class="w-[1248px] h-[777px] relative">
+        <div class="w-[1248px] h-[243px] left-0 top-0 absolute">
+          <div class="w-[400px] h-[243px] left-0 top-0 absolute justify-center items-center inline-flex">
+            <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+              <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+              <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">unDraw</div>
+              <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+            </div>
+          </div>
+          <div class="w-[400px] h-[243px] left-[424px] top-0 absolute justify-center items-center inline-flex">
+            <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+              <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+              <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">humaaans</div>
+              <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+            </div>
+          </div>
+          <div class="w-[400px] h-[243px] left-[848px] top-0 absolute justify-center items-center inline-flex">
+            <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+              <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+              <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">blush</div>
+              <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[1248px] h-[243px] left-0 top-[267px] absolute">
+          <div class="w-[400px] h-[243px] left-0 top-0 absolute justify-center items-center inline-flex">
+            <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+              <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+              <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">stubborn</div>
+              <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+            </div>
+          </div>
+          <div class="w-[400px] h-[243px] left-[424px] top-0 absolute justify-center items-center inline-flex">
+            <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+              <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+              <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">illustAC</div>
+              <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+            </div>
+          </div>
+          <div class="w-[400px] h-[243px] left-[848px] top-0 absolute justify-center items-center inline-flex">
+            <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+              <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+              <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">ちょうどいいイラスト</div>
+              <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[1248px] h-[243px] left-0 top-[534px] absolute">
+          <div class="w-[400px] h-[243px] left-0 top-0 absolute justify-center items-center inline-flex">
+            <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+              <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+              <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Transparent Texture</div>
+              <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+            </div>
+          </div>
+          <div class="w-[400px] h-[243px] left-[424px] top-0 absolute justify-center items-center inline-flex">
+            <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+              <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+              <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Lorem</div>
+              <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+            </div>
+          </div>
+          <div class="w-[400px] h-[243px] left-[848px] top-0 absolute justify-center items-center inline-flex">
+            <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+              <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+              <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Lorem</div>
+              <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bar -->
+    <div class="w-[1440px] h-2.5 left-0 top-[12618px] absolute bg-neutral-200 justify-center items-center inline-flex">
+      <div class="w-[1440px] h-2.5 bg-neutral-200 shadow-inner"></div>
+    </div>
+
+    <!-- Deployment Section -->
+    <section class="h-[1188px] px-24 pt-[72px] pb-[120px] left-[-1px] top-[12628px] absolute flex-col justify-start items-center gap-10 inline-flex">
+      <div class="h-[179px] relative">
+        <div class="w-[277px] h-[79px] pt-[15px] pb-4 left-0 top-[100px] absolute justify-center items-center inline-flex">
+          <div class="text-center text-neutral-200 text-5xl font-bold font-logo leading-[48px]">Deployment, Testing Resources</div>
+        </div>
+      </div>
+      <div class="w-[1248px] h-[777px] relative">
+        <div class="w-[1248px] h-[243px] left-0 top-0 absolute">
+          <div class="w-[400px] h-[243px] p-7 left-0 top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">The Front-End Checklist</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[424px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Google Analytics</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[848px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Netlify</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+        <div class="w-[1248px] h-[243px] left-0 top-[267px] absolute">
+          <div class="w-[400px] h-[243px] p-7 left-0 top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">cdnjs</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[424px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Vercel</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[848px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Real Favicon Generator</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+        <div class="w-[1248px] h-[243px] left-0 top-[534px] absolute">
+          <div class="w-[400px] h-[243px] p-7 left-0 top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Page Speed Insight</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[424px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Lorem</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+          <div class="w-[400px] h-[243px] p-7 left-[848px] top-0 absolute bg-neutral-200 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Lorem</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bar -->
+    <div class="w-[1440px] h-2.5 left-0 top-[13816px] absolute bg-neutral-200 justify-center items-center inline-flex">
+      <div class="w-[1440px] h-2.5 bg-neutral-200 shadow-inner"></div>
+    </div>
+
+    <!-- Community Section -->
+    <section class="sub-bg h-[654px] px-24 pt-[72px] pb-[120px] left-[-1px] top-[13826px] absolute flex-col justify-start items-center gap-10 inline-flex">
+      <div class="h-[179px] relative">
+        <div class="w-[277px] h-[79px] pt-[15px] pb-4 left-0 top-[100px] absolute justify-center items-center inline-flex">
+          <div class="text-center text-gray-300 text-5xl font-bold font-logo leading-[48px]">Dev Community Sites</div>
+        </div>
+      </div>
+      <div class="w-[1248px] h-[243px] relative">
+        <div class="w-[400px] h-[243px] left-0 top-0 absolute justify-center items-center inline-flex">
+          <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Stuckoverflow</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+        <div class="w-[400px] h-[243px] left-[424px] top-0 absolute justify-center items-center inline-flex">
+          <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Lorem</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+        <div class="w-[400px] h-[243px] left-[848px] top-0 absolute justify-center items-center inline-flex">
+          <div class="w-[400px] p-7 bg-gray-300 rounded-lg shadow flex-col justify-start items-start gap-3 inline-flex">
+            <div class="w-16 h-16 bg-neutral-200 rounded-full shadow-inner"></div>
+            <div class="text-stone-500 text-lg font-bold font-serif leading-[27px]">Lorem</div>
+            <div class="w-[349px] text-stone-500 text-base font-normal font-sans leading-normal">Lorem ipsum dolor sit amet consectetur.<br />Purus malesuada dolor eget pretium pulvinar fermentum.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="w-[1440px] h-[452px] left-0 top-[14480px] absolute bg-[--Secondary-regular]">
+      <div class="left-[607px] top-[417px] absolute text-center text-neutral-200 text-xs font-light font-sans leading-[18px]">© 2023 Front-Enders All Right Reserved</div>
+      <div class="left-[96px] top-[132px] absolute text-center text-neutral-200 text-[32px] font-bold font-logo leading-7">Front-Enders</div>
+      <div class="w-[183px] h-[135px] left-[888px] top-[132px] absolute text-neutral-200 text-sm font-normal font-sans leading-loose">Design Inspiration<br />Interaction Design<br />Components<br />Illustration</div>
+      <div class="w-[114.49px] h-[18px] left-[1229px] top-[132px] absolute"></div>
+      <div class="w-[180px] h-[185px] left-[416px] top-[132px] absolute text-neutral-200 text-sm font-normal font-sans leading-loose">Dev Tools<br />HTML<br />CSS<br />Javascript<br />Images & Videos</div>
+      <div class="w-[196px] h-[185px] left-[644px] top-[132px] absolute text-neutral-200 text-sm font-normal font-sans leading-loose">Fonts & Typography <br />Icons<br />Color Tools<br />Deployment, Testing <br />Dev Communities</div>
+    </footer>
+    <div class="w-20 h-20 left-[1262px] top-[742px] absolute">
+      <div class="w-20 h-20 left-0 top-0 absolute bg-neutral-200 rounded-full shadow"></div>
+    </div>
+  </body>
+</html>

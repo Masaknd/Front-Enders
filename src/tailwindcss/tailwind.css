@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*------------------------------------------------------
+ Common Styles
+------------------------------------------------------*/
+:root {
+  --primary-trans: #676767;
+  --primary-light: #e0e0e0;
+  --primary-regular: #676767;
+  --primary-accent: #eaeaea;
+  --secondary-dark: #d1dadb;
+  --secondary-light: #d4eaee;
+  --secondary-regular: #49b3ba;
+  --secondary-accent: #d9e6e7;
+}
+
+.bg-primary {
+  background: url("../images/bg-main@2x.png"), var(--primary-light);
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.bg-secondary {
+  background: url("../images/bg-sub@2x.png"), var(--secondary-dark);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.text-wrap {
+  text-wrap: balance;
+}
+
+/*------------------------------------------------------
+ Components Styles
+------------------------------------------------------*/
+/* Nav Bottons */
+.nav-btn:hover {
+  background: var(--primary-light);
+  box-shadow: -5px -5px 5px 0px #ebebeb inset, 5px 5px 5px 0px #d5d5d5 inset;
+  @apply rounded-sm transition-all duration-300 ease-in-out;
+}
+
+/* Item Shadow  */
+.item {
+  background: var(--primary-light);
+  box-shadow: -3px -3px 5px 0px #fdfdfd, 3px 3px 5px 0px #c3c3c3;
+  @apply rounded-md transition-all duration-300 ease-in-out;
+}
+
+/* Item Hover Effect */
+.item:hover {
+  box-shadow: -3px -3px 5px 0px #fff inset, 3px 3px 5px 0px #b8b8b8 inset;
+}
+
+/* Item-g Shadow  */
+.item-g {
+  background: var(--secondary-dark);
+  box-shadow: -3px -3px 5px 0px #f0fbfc, 3px 3px 5px 0px #b2b9ba;
+  @apply rounded-md transition-all duration-300 ease-in-out;
+}
+
+/* Item-g Hover Effect */
+.item-g:hover {
+  box-shadow: -3px -3px 5px 0px #f7ffff inset, 3px 3px 5px 0px #abb3b4 inset;
+}
+
+/* Item Logo Round */
+.rounded-logo{
+  @apply w-16 h-16 rounded-full
+}
+
+/* Item Logo Rectangle */
+.rectangle-logo {
+  @apply rounded-md px-6 py-4
+}
+/* Item Logo Shadow */
+.item-logo {
+  fill: var(--primary-light);
+  box-shadow: -5px -5px 12px 0px #fff inset, 5px 5px 12px 0px #bebebe inset;
+}
+
+/* Section Bar Shadow */
+.bar {
+  @apply max-w-max w-full h-4;
+  background: var(--primary-light);
+  box-shadow: -5px -5px 5px 0px #fbfbfb inset, 5px 5px 5px 0px #c5c5c5 inset;
+}
+
+/* Section Title Shadow */
+.section-title {
+  color: var(--Primary-light);
+  text-shadow: -3px -3px 3px 0px #fbfbfb inset, 3px 3px 3px 0px #c5c5c5 inset;
+}
+
+.text-secondary {
+  color: var(--Secondary-dark);
+  text-shadow: -1px -1px 3px 0px #fbfbfb inset, 1px 1px 3px 0px #c5c5c5 inset;
+}
