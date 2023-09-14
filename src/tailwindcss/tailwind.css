@@ -93,7 +93,7 @@
 
 /* Section Bar Shadow */
 .bar {
-  @apply max-w-max w-full h-4;
+  @apply w-full h-2 md:h-3 ;
   background: var(--primary-light);
   box-shadow: -5px -5px 5px 0px #fbfbfb inset, 5px 5px 5px 0px #c5c5c5 inset;
 }
