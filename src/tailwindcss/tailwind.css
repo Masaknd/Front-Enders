@@ -6,7 +6,7 @@
  Common Styles
 ------------------------------------------------------*/
 :root {
-  --primary-trans: #676767;
+  --primary-trans: rgba(103, 103, 103, 0.9);
   --primary-light: #e0e0e0;
   --primary-regular: #676767;
   --primary-accent: #eaeaea;
@@ -115,7 +115,6 @@ a {
 /*------------------------------------------------------
  Text Link Animations
 ------------------------------------------------------*/
-
 .underline {
   @apply z-10 relative align-middle inline-block text-[--primary-light] transition-colors duration-100;
 }
@@ -152,7 +151,7 @@ a {
   height: 2px;
   top: 0;
   left: 0;
-  background: #fff;
+  background: var(--primary-regular);
   transform: rotate(0);
   transition: all 0.5s;
 }
@@ -178,4 +177,11 @@ a {
 }
 .open > .hamburger-bottom {
   transform: rotate(-45deg) translateX(-6px) translateY(6px);
+}
+
+.js-text-color {
+  @apply text-[--primary-light]
+}
+.js-bg-color {
+  @apply  bg-[--primary-light]
 }
