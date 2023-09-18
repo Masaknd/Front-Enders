@@ -8,6 +8,7 @@
 :root {
   --primary-trans: rgba(103, 103, 103, 0.9);
   --primary-light: #e0e0e0;
+  --primary-dark: rgba(60, 60, 60, 0.9);
   --primary-regular: #676767;
   --primary-accent: #eaeaea;
   --secondary-dark: #d1dadb;
@@ -48,13 +49,6 @@ a {
 /*------------------------------------------------------
  Components Styles
 ------------------------------------------------------*/
-/* Nav Bottons */
-.nav-btn:hover {
-  background: var(--primary-light);
-  box-shadow: -5px -5px 5px 0px #ebebeb inset, 5px 5px 5px 0px #d5d5d5 inset;
-  @apply rounded-sm transition-all duration-300 ease-in-out;
-}
-
 /* Item Shadow  */
 .item {
   background: var(--primary-light);
@@ -113,6 +107,25 @@ a {
 }
 
 /*------------------------------------------------------
+ Accordion Menu Animations
+------------------------------------------------------*/
+/* Nav Bottons */
+.nav-btn:hover {
+  background: var(--primary-light);
+  box-shadow: -5px -5px 5px 0px #ebebeb inset, 5px 5px 5px 0px #d5d5d5 inset;
+  @apply rounded-sm transition-all duration-300 ease-in-out;
+}
+
+/* Accordion Menu */
+.nav-btn:hover .menu,
+.nav-btn:active .menu {
+  width: 100%;
+  background-color: var(--primary-dark);
+  text-align: center;
+  visibility: visible;
+}
+
+/*------------------------------------------------------
  Text Link Animations
 ------------------------------------------------------*/
 .underline {
@@ -152,7 +165,7 @@ a {
   top: 0;
   left: 0;
   background: var(--primary-regular);
-  transform: rotate(0);
+  /* transform: rotate(0); */
   transition: all 0.5s;
 }
 
@@ -180,8 +193,8 @@ a {
 }
 
 .js-text-color {
-  @apply text-[--primary-light]
+  @apply text-[--primary-light];
 }
 .js-bg-color {
-  @apply  bg-[--primary-light]
+  @apply bg-[--primary-light];
 }

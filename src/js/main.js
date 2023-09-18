@@ -29,9 +29,7 @@ mobMenus.forEach((mobMenu) => {
 });
 
 function closeMenu() {
-  btn.classList.toggle("open");
-  menu.classList.toggle("flex");
-  menu.classList.toggle("hidden");
+  menu.classList.add("hidden");
   logo.classList.toggle("js-text-color");
   hamburgerTop.classList.toggle("js-bg-color");
   hamburgerMiddle.classList.toggle("js-bg-color");
