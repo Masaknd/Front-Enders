@@ -52,39 +52,30 @@ a {
 /* Item Shadow  */
 .item {
   background: var(--primary-light);
-  box-shadow: -3px -3px 5px 0px #fdfdfd, 3px 3px 5px 0px #c3c3c3;
-  @apply rounded-md transition-all duration-300;
+  box-shadow: -3px -3px 5px #fdfdfd, 3px 3px 5px #c3c3c3, inset -3px -3px 5px transparent, inset 3px 3px 5px transparent;
+  @apply rounded-md duration-300 ease-in-out;
 }
 
 /* Item Hover Effect */
 .item:hover {
-  box-shadow: -3px -3px 5px 0px #fff inset, 3px 3px 5px 0px #b8b8b8 inset;
+  box-shadow: -3px -3px 5px transparent, 3px 3px 5px transparent, inset -3px -3px 5px #fff, inset 3px 3px 5px #b8b8b8;
 }
 
 /* Item-g Shadow  */
 .item-g {
   background: var(--secondary-dark);
-  box-shadow: -3px -3px 5px 0px #f0fbfc, 3px 3px 5px 0px #b2b9ba;
-  @apply rounded-md transition-all duration-300 ease-in-out;
+  box-shadow: -3px -3px 5px #f0fbfc, 3px 3px 5px #b2b9ba, inset -3px -3px 5px transparent, inset 3px 3px 5px transparent;
+  @apply rounded-md duration-300 ease-in-out;
 }
 
 /* Item-g Hover Effect */
 .item-g:hover {
-  box-shadow: -3px -3px 5px 0px #f7ffff inset, 3px 3px 5px 0px #abb3b4 inset;
+  box-shadow: -3px -3px 5px transparent, 3px 3px 5px transparent, inset -3px -3px 5px #f7ffff, inset 3px 3px 5px #abb3b4;
 }
 
-/* Item Logo Round */
-.rounded-logo {
-  @apply w-16 h-16 rounded-full;
-}
-
-/* Item Logo Rectangle */
-.rectangle-logo {
-  @apply rounded-md px-6 py-4;
-}
 /* Item Logo Shadow */
 .item-logo {
-  @apply h-9 mb-4;
+  @apply h-9 mb-2;
 }
 
 /* Section Bar Shadow */
@@ -106,14 +97,18 @@ a {
 }
 
 /* Back to top button */
-.top-btn {
+.btn-top {
   background: var(--primary-light);
-  box-shadow: -3px -3px 5px 0px #fdfdfd, 3px 3px 5px 0px #c3c3c3;
-  @apply flex justify-center items-center w-20 h-20 fixed right-36 bottom-16 bg-[--primary-light] rounded-full transition-all duration-300 backdrop-invert;
+  /* box-shadow: -3px -3px 5px 0px #fdfdfd, 3px 3px 5px 0px #c3c3c3; */
+  @apply hidden md:flex justify-center items-center w-14 h-14 lg:w-20 lg:h-20 fixed right-6 bottom-8 lg:right-28 lg:bottom-16 bg-[--primary-light] rounded-full duration-150 mix-blend-multiply opacity-0;
 }
 
-.top-btn:hover{
+.btn-top:hover {
   box-shadow: -3px -3px 5px 0px #fff inset, 3px 3px 5px 0px #b8b8b8 inset;
+}
+
+.active {
+  opacity: 1;
 }
 
 /*------------------------------------------------------
@@ -123,23 +118,16 @@ a {
 .nav-btn:hover,
 .nav-btn:active {
   background: var(--primary-light);
-  box-shadow: -5px -5px 5px 0px #ebebeb inset, 5px 5px 5px 0px #d5d5d5 inset;
-  @apply rounded-sm ease-in-out;
+  box-shadow: -5px -5px 5px transparent, 5px 5px 5px transparent, inset -5px -5px 5px #ebebeb, inset 5px 5px 5px #d5d5d5;
+  @apply rounded-sm duration-300 ease-in-out;
 }
 /* Menu Item */
 .menu-item {
-  @apply block py-2 w-full leading-10 duration-300 border-[--primary-light] border-b hover:bg-[--primary-dark];
+  @apply block py-2 lg:py-4 w-full text-sm lg:text-base leading-8 border-[--primary-light] border-b hover:bg-[--primary-dark];
 }
 
 .menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  width: 100%;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  visibility: hidden;
+  @apply absolute invisible top-[42px] lg:top-[55px] left-0 flex flex-wrap justify-start w-full;
 }
 
 /* Accordion Menu */

@@ -29,9 +29,25 @@ mobMenus.forEach((mobMenu) => {
 });
 
 function closeMenu() {
+  btn.classList.toggle("open");
   menu.classList.add("hidden");
   logo.classList.toggle("js-text-color");
   hamburgerTop.classList.toggle("js-bg-color");
   hamburgerMiddle.classList.toggle("js-bg-color");
   hamburgerBottom.classList.toggle("js-bg-color");
 }
+
+/*------------------------------------------------------
+ Scroll Events
+------------------------------------------------------*/
+const btnTop = document.querySelector(".btn-top");
+
+window.addEventListener("scroll", () => {
+  let scrollY = window.scrollY;
+  if (scrollY > 700) {
+    btnTop.classList.add("active");
+  } else {
+    btnTop.classList.remove("active");
+  }
+});
+
