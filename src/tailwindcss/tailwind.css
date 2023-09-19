@@ -112,15 +112,18 @@
  Accordion Menu Animations
 ------------------------------------------------------*/
 /* Nav Bottons */
-.nav-btn:hover,
-.nav-btn:active {
+.btn-nav {
+  @apply py-2 lg:py-4 px-14 lg:px-14 relative hidden md:block cursor-pointer;
+}
+.btn-nav:hover,
+.btn-nav:active {
   background: var(--primary-light);
   box-shadow: -5px -5px 5px transparent, 5px 5px 5px transparent, inset -5px -5px 5px #ebebeb, inset 5px 5px 5px #d5d5d5;
   @apply rounded-sm duration-300 ease-in-out;
 }
 /* Menu Item */
 .menu-item {
-  @apply block py-2 lg:py-4 w-full text-sm lg:text-base leading-8 border-[--primary-light] border-b hover:bg-[--primary-dark];
+  @apply block py-2 w-full text-sm lg:text-base font-light leading-3 hover:bg-[--primary-dark];
 }
 
 .menu {
@@ -128,7 +131,7 @@
 }
 
 /* Accordion Menu */
-.nav-btn:hover .menu {
+.btn-nav:hover .menu {
   visibility: visible;
 }
 

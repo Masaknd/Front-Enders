@@ -50,4 +50,3 @@ window.addEventListener("scroll", () => {
     btnTop.classList.remove("active");
   }
 });
-
