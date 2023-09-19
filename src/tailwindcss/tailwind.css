@@ -17,9 +17,6 @@
   --secondary-accent: #d9e6e7;
 }
 
-a {
-  @apply decoration-0;
-}
 .bg-primary {
   background: url("../images/bg-main@2x.png"), var(--primary-light);
   background-repeat: repeat;
@@ -139,7 +136,7 @@ a {
  Text Link Animations
 ------------------------------------------------------*/
 .underline {
-  @apply z-10 relative align-middle inline-block text-[--primary-light] transition-colors duration-100;
+  @apply z-10 relative align-middle inline-block text-[--primary-light] leading-6 no-underline transition-colors duration-100;
 }
 
 .underline:hover {
