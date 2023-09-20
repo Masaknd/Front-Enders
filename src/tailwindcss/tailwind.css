@@ -208,3 +208,27 @@
 .js-bg-color {
   @apply bg-[--primary-light];
 }
+
+/*------------------------------------------------------
+ Header Scroll Animation
+------------------------------------------------------*/
+.js-header-hide {
+  animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+
+.js-header-show{
+  animation: DownAnime 0.5s forwards;
+}
+
+

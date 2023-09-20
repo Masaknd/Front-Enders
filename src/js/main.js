@@ -10,7 +10,6 @@ const hamburgerTop = document.querySelector(".hamburger-top");
 const hamburgerMiddle = document.querySelector(".hamburger-middle");
 const hamburgerBottom = document.querySelector(".hamburger-bottom");
 const mobMenus = document.querySelectorAll(".mobile-menu");
-console.log(mobMenus);
 
 btn.addEventListener("click", navToggle);
 
@@ -25,7 +24,7 @@ function navToggle() {
 }
 
 mobMenus.forEach((mobMenu) => {
-  mobMenu.addEventListener('click', closeMenu)
+  mobMenu.addEventListener("click", closeMenu);
 });
 
 function closeMenu() {
@@ -49,4 +48,41 @@ window.addEventListener("scroll", () => {
   } else {
     btnTop.classList.remove("active");
   }
+});
+
+/*------------------------------------------------------
+ Header Scroll Animation
+------------------------------------------------------*/
+const header = document.getElementById("header");
+const windowHeight = window.innerHeight;
+const documentHeight = document.documentElement.scrollHeight;
+const windowBottom = windowHeight - documentHeight;
+
+let beforePos = 0; // Scroll position before the animation starts
+
+// Scroll function to hide and show the header
+function scrollAnimation() {
+  let elemTop = document.getElementById("about").offsetTop; //scroll up to 'about' position
+  let scroll = window.scrollY; // current scroll position
+
+  if (scroll === beforePos) {
+    return;
+  } else if (elemTop > scroll || 0 > scroll - beforePos || windowBottom + scroll == 0) {
+    header.classList.remove("js-header-hide"); // remove class to hide header
+    header.classList.add("js-header-show"); // add class to show header
+  } else {
+    header.classList.remove("js-header-show"); // remove class to show header
+    header.classList.add("js-header-hide"); // add class to hide header
+  }
+  beforePos = scroll; // update the present scroll position
+}
+
+// When scrolling, trigger the scroll function "scrollAnimation"
+window.addEventListener("scroll", () => {
+  scrollAnimation();
+});
+
+// When the page is loaded, trigger the scroll function "scrollAnimation"
+window.addEventListener("load", () => {
+  scrollAnimation();
 });
