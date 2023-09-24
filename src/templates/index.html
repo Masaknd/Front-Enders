@@ -11,22 +11,22 @@
     <title>Front-Enders</title>
   </head>
 
-  <body class="relative bg-primary text-[--primary-regular]">
+  <body class="bg-primary text-[--primary-regular]">
     <!-- Header Section -->
-    <header id="header" class="z-40 fixed top-0 left-0 min-w-full backdrop-blur-sm">
+    <header id="header" class="z-40 fixed top-0 left-0 min-w-full w-full backdrop-blur-sm">
       <!-- Header Container -->
       <div class="max-w-7xl mx-auto py-2 px-8 md:py-3 md:px-6">
         <div class="flex flex-row justify-between items-center">
-          <h1 id="logo" class="font-logo block text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold duration-300 ease-in-out hover:-rotate-3 hover:-translate-x-3 hover:scale-90"><a href="#">Front-Enders</a></h1>
+          <h1 id="logo" class="font-logo text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold duration-300 ease-in-out hover:-rotate-3 hover:-translate-x-3 hover:scale-90"><a class="block" href="#">Front-Enders</a></h1>
           <!-- Drop-down Menu and Nav Buttons -->
           <nav class="">
-            <ul class="md:flex flex-row">
+            <ul class="relative md:flex flex-row justify-between max-w-4xl">
               <li class="btn-nav">
-                <a href="#about" class="font-sans font-medium text-sm lg:text-base">About</a>
+                <a href="#about" class="inline-block py-2 lg:py-4 px-14 lg:px-14 font-sans font-medium text-sm lg:text-base">About</a>
               </li>
               <li class="btn-nav">
-                <a class="font-sans font-medium text-sm lg:text-base">Dev</a>
-                <ul class="menu bg-[--primary-trans] text-[--primary-light] text-center duration-150">
+                <a class="inline-block py-2 lg:py-4 px-14 lg:px-14 font-sans font-medium text-sm lg:text-base">Dev</a>
+                <ul class="menu">
                   <li class="w-full"><a class="menu-item" href="#dev">Dev Tools</a></li>
                   <li class="w-full"><a class="menu-item" href="#html">HTML</a></li>
                   <li class="w-full"><a class="menu-item" href="#css">CSS</a></li>
@@ -36,8 +36,8 @@
                 </ul>
               </li>
               <li class="btn-nav">
-                <a class="font-sans font-medium text-sm lg:text-base">Design</a>
-                <ul class="menu bg-[--primary-trans] text-[--primary-light] text-center">
+                <a class="inline-block py-2 lg:py-4 px-14 lg:px-14 font-sans font-medium text-sm lg:text-base">Design</a>
+                <ul class="menu">
                   <li class="w-full"><a class="menu-item" href="#images">Images &amp; Videos</a></li>
                   <li class="w-full"><a class="menu-item" href="#fonts">Fonts</a></li>
                   <li class="w-full"><a class="menu-item" href="#icons">Icons</a></li>
@@ -145,7 +145,13 @@
     <!-- About Section -->
     <section id="about">
       <!-- Section Container -->
-      <div class="section-container"></div>
+      <div class="max-w-3xl mx-auto pt-8 md:pt-60 pb-8 md:pb-16 lg:pb-32 px-6">
+        <div class="flex flex-col justify-center items-center mb-8">
+          <h2 class="relative quote font-serif text-4xl text-center">Plain &amp; smooth</h2>
+        </div>
+        <p class="font-sans text-sm sm:text-base md:text-xl font-thin md:leading-loose">It's a tool collection I use most of the time for web development and designing. I made a concept for this website, "Plain and smooth" that doesn't bother my eyes throughout the days of my work. It's quite the other way around from regular commercial site design.</p>
+        <p class="font-sans text-sm sm:text-base md:text-xl font-thin md:leading-loose">So if you're tired of being caught your eye by colourful prominent and fancy websites, put some eye drops, take a cup of hot chocolate and rest your eyes here.</p>
+      </div>
     </section>
     <div class="bar"></div>
 
@@ -822,7 +828,7 @@
             <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://partsdesign.net/" target="_blank">
               <img class="h-6 mb-2" src="../images/parts_logo.png" alt="Parts." />
               <h4 class="font-serif font-semibold text-lg text-center md:text-left">Parts.</h4>
-              <p class="font-sans font-normal text-base">Parts. is a design gallery for specific pages, components, elements, and visual graphics. </p>
+              <p class="font-sans font-normal text-base">Parts. is a design gallery for specific pages, components, elements, and visual graphics.</p>
             </a>
           </li>
 
