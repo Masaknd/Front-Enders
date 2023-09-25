@@ -10,6 +10,7 @@ const hamburgerTop = document.querySelector(".hamburger-top");
 const hamburgerMiddle = document.querySelector(".hamburger-middle");
 const hamburgerBottom = document.querySelector(".hamburger-bottom");
 const mobMenus = document.querySelectorAll(".mobile-menu");
+const body = document.querySelector("body");
 
 btn.addEventListener("click", navToggle);
 
@@ -21,6 +22,7 @@ function navToggle() {
   hamburgerTop.classList.toggle("js-bg-color");
   hamburgerMiddle.classList.toggle("js-bg-color");
   hamburgerBottom.classList.toggle("js-bg-color");
+  document.body.style.overflow = "hidden";
 }
 
 mobMenus.forEach((mobMenu) => {
@@ -34,6 +36,7 @@ function closeMenu() {
   hamburgerTop.classList.toggle("js-bg-color");
   hamburgerMiddle.classList.toggle("js-bg-color");
   hamburgerBottom.classList.toggle("js-bg-color");
+  document.body.style.overflow = "auto";
 }
 
 /*------------------------------------------------------
