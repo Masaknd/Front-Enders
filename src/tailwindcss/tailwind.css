@@ -77,17 +77,6 @@
   box-shadow: -5px -5px 5px 0px #fbfbfb inset, 5px 5px 5px 0px #c5c5c5 inset;
 }
 
-/* Section Title Shadow */
-.section-title {
-  @apply text-[--Primary-light];
-  text-shadow: -3px -3px 3px 0px #fbfbfb inset, 3px 3px 3px 0px #c5c5c5 inset;
-}
-
-.text-secondary {
-  @apply text-[--Secondary-dark];
-  text-shadow: -1px -1px 3px 0px #fbfbfb inset, 1px 1px 3px 0px #c5c5c5 inset;
-}
-
 /* Back to top button */
 .btn-top {
   @apply bg-[--primary-light]; /* box-shadow: -3px -3px 5px 0px #fdfdfd, 3px 3px 5px 0px #c3c3c3; */
@@ -95,7 +84,7 @@
 }
 
 .btn-top:hover {
-  box-shadow: -3px -3px 5px 0px #fff inset, 3px 3px 5px 0px #b8b8b8 inset;
+  box-shadow: -3px -3px 3px 0px #fff inset, 3px 3px 3px 0px #b8b8b8 inset;
 }
 
 .active {
@@ -126,7 +115,7 @@
 }
 .btn-nav:hover,
 .btn-nav:active {
-  box-shadow: -3px -3px 2px transparent, 3px 3px 2px transparent, inset -3px -3px 2px #ebebeb, inset 3px 2px 2px #d5d5d5;
+  box-shadow: -10px -5px 3px transparent, 5px 5px 3px transparent, inset -5px -5px 3px #ebebeb, inset 5px 5px 3px #d5d5d5;
   @apply rounded-sm scale-[99%] duration-300 ease-in-out;
 }
 
