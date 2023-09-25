@@ -105,14 +105,14 @@
 /* Blockquote on about */
 .quote::before,
 .quote::after {
-  @apply absolute z-0 block w-3 h-3 content-none font-logo text-5xl;
+  @apply absolute z-0 block w-3 h-3 content-none font-logo text-3xl md:text-5xl;
 }
 .quote::before {
-  @apply -top-4 -left-10;
+  @apply -top-2 -left-5 md:-top-4 md:-left-10;
 	content: open-quote;
 }
 .quote::after {
-  @apply bottom-4 -right-6;
+  @apply bottom-2 -right-4 md:bottom-4 md:-right-6;
 	content: close-quote;
 }
 
@@ -150,7 +150,7 @@
  Text Link Animations
 ------------------------------------------------------*/
 .underline {
-  @apply z-10 relative align-middle inline-block text-[--primary-light] leading-6 no-underline transition-colors duration-100;
+  @apply z-0 relative align-middle inline-block text-[--primary-light] leading-6 no-underline transition-colors duration-100;
 }
 
 .underline:hover {

@@ -13,11 +13,11 @@
 
   <body class="bg-primary text-[--primary-regular]">
     <!-- Header Section -->
-    <header id="header" class="z-40 fixed top-0 left-0 min-w-full w-full backdrop-blur-sm">
+    <header id="header" class="z-10 fixed top-0 left-0 min-w-full w-full backdrop-blur-sm">
       <!-- Header Container -->
       <div class="max-w-7xl mx-auto py-3 px-8 md:py-3 md:px-6">
         <div class="flex flex-row justify-between items-center">
-          <h1 id="logo" class="font-logo text-xl sm:text-3xl lg:text-4xl font-semibold duration-300 ease-in-out hover:-rotate-3 hover:-translate-x-3 hover:scale-90"><a class="block" href="#">Front-Enders</a></h1>
+          <h1 id="logo" class="z-40 font-logo text-xl sm:text-3xl lg:text-4xl font-semibold duration-300 ease-in-out hover:-rotate-3 hover:-translate-x-3 hover:scale-90"><a class="block" href="#">Front-Enders</a></h1>
           <!-- Drop-down Menu and Nav Buttons -->
           <nav class="">
             <ul class="relative md:flex flex-row justify-between max-w-4xl">
@@ -53,7 +53,7 @@
 
             <!-- Hamburger Button-->
             <div class="">
-              <button id="menu-btn" type="button" class="md:hidden block hamburger focus:outline-none">
+              <button id="menu-btn" type="button" class="z-40 md:hidden block hamburger focus:outline-none">
                 <span class="hamburger-top"></span>
                 <span class="hamburger-middle"></span>
                 <span class="hamburger-bottom"></span>
@@ -62,23 +62,10 @@
           </nav>
         </div>
       </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="hero" class="max-w-7xl mx-auto h-screen flex items-center px-4 pt-32 xl:pt-52 pb-28 xl:pb-56">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-16 lg:gap-8">
-        <div class="md:w-1/2 lg:pl-32 md:pl-24">
-          <img class="w-44 sm:w-72 md:w-[26rem]" src="../images/hero-img.svg" alt="Logo" />
-        </div>
-        <div class="md:w-1/2 flex flex-col gap-4 lg:gap-8">
-          <h2 class="font-serif text-2xl sm:text-3xl md:text-5xl text-center md:text-left leading-8 md:leading-snug text-wrap">Handful-tools for Front-End Developers &amp; Designers</h2>
-          <p class="font-js text-sm sm:text-base md:text-lg text-center md:text-left leading-8 text-wrap">フロントエンドデベトッパーとデザイナーのための便利ツール</p>
-        </div>
-      </div>
 
       <!-- Mobile Menu -->
-      <div id="menu" class="z-10 fixed top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen overflow-scroll px-4 pt-20 pb-20 text-[--primary-light] bg-[--primary-trans] transition-all duration-300">
-        <ul class="mx-auto space-y-6 text-lg font-normal text-[--primary-light] text-left">
+      <div id="menu" class="fixed top-0 bottom-0 left-0 hidden flex-col items-center self-end w-full min-h-screen h-full px-4 pt-20 pb-20 text-[--primary-light] bg-[--primary-trans] transition-all duration-300">
+        <ul class="space-y-6 text-lg font-normal text-[--primary-light] text-left">
           <li>
             <ul class="leading-10">
               <li>
@@ -135,14 +122,27 @@
           </li>
         </ul>
       </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="max-w-7xl mx-auto h-screen flex items-center px-4 pt-32 xl:pt-52 pb-28 xl:pb-56">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-16 lg:gap-8">
+        <div class="md:w-1/2 lg:pl-32 md:pl-24">
+          <img class="w-44 sm:w-72 md:w-[26rem]" src="../images/hero-img.svg" alt="Logo" />
+        </div>
+        <div class="md:w-1/2 flex flex-col gap-4 lg:gap-8">
+          <h2 class="font-serif text-2xl sm:text-3xl md:text-5xl text-center md:text-left leading-8 md:leading-snug text-wrap">Handful-tools for Front-End Developers &amp; Designers</h2>
+          <p class="font-js text-sm sm:text-base md:text-lg text-center md:text-left leading-8 text-wrap">フロントエンドデベトッパーとデザイナーのための便利ツール</p>
+        </div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
       <!-- Section Container -->
-      <div class="max-w-3xl lg:max-w-4xl mx-auto pt-8 md:pt-60 pb-32 md:pb-48 lg:pb-60 px-6">
+      <div class="max-w-3xl lg:max-w-4xl mx-auto pt-8 sm:pt-40 md:pt-60 pb-32 sm:pb-40 md:pb-48 lg:pb-60 px-6">
         <div class="flex flex-col justify-center items-center mb-8">
-          <h2 class="relative quote font-serif text-4xl text-center">Plain &amp; Smooth</h2>
+          <h2 class="relative quote font-serif  text-2xl md:text-4xl text-center">Plain &amp; Smooth</h2>
         </div>
         <p class="font-sans text-base md:text-xl font-thin md:leading-loose">This is the tool collection I use all the time to design and develop websites. I always wanted my tool page I could reach out to quicker and easier than clicking my bookmark folders over and over painfully.</p>
         <br />
@@ -1092,9 +1092,9 @@
       <!-- Footer Container -->
       <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start pt-16 pb-6 md:pb-24 px-6 space-y-10 md:space-y-0">
         <h2 class="font-logo text-3xl font-semibold text-[--primary-light] hover:text-[--secondary-light]"><a href="#">Front-Enders</a></h2>
-        <ul class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-32 mx-auto text-base font-normal text-[--primary-light] text-left sm:text-left">
+        <ul class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-32 self-center text-base font-normal text-[--primary-light] text-left sm:text-left">
           <li>
-            <ul class="leading-9">
+            <ul class="relative leading-9">
               <li>
                 <a href="#dev"><span class="underline">Dev Tools</span></a>
               </li>
@@ -1147,6 +1147,7 @@
               </li>
             </ul>
           </li>
+
         </ul>
         <ul class="flex flex-row items-center lg:items-start pb-10 lg:pb-0 space-x-8 lg:space-x-8 text-2xl text-[--primary-light]">
           <li>

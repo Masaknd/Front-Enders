@@ -10,7 +10,7 @@ const hamburgerTop = document.querySelector(".hamburger-top");
 const hamburgerMiddle = document.querySelector(".hamburger-middle");
 const hamburgerBottom = document.querySelector(".hamburger-bottom");
 const mobMenus = document.querySelectorAll(".mobile-menu");
-const body = document.querySelector("body");
+// const body = document.getElementsByTagName("body");
 
 btn.addEventListener("click", navToggle);
 
@@ -22,8 +22,15 @@ function navToggle() {
   hamburgerTop.classList.toggle("js-bg-color");
   hamburgerMiddle.classList.toggle("js-bg-color");
   hamburgerBottom.classList.toggle("js-bg-color");
-  document.body.style.overflow = "hidden";
 }
+
+btn.onclick = function () {
+  if (btn.classList.contains("open")) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+};
 
 mobMenus.forEach((mobMenu) => {
   mobMenu.addEventListener("click", closeMenu);
