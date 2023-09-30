@@ -67,8 +67,12 @@
 }
 
 /* Item Logo Shadow */
-.item-logo {
-  @apply h-9 mb-2;
+.item-logo_sq {
+  @apply h-9 w-auto mb-2;
+}
+
+.item-logo_rect {
+  @apply h-6 w-auto mb-3;
 }
 
 /* Section Bar Shadow */
@@ -98,13 +102,12 @@
 }
 .quote::before {
   @apply -top-2 -left-5 md:-top-4 md:-left-10;
-	content: open-quote;
+  content: open-quote;
 }
 .quote::after {
   @apply bottom-2 -right-4 md:bottom-4 md:-right-6;
-	content: close-quote;
+  content: close-quote;
 }
-
 
 /*------------------------------------------------------
  Accordion Menu Animations

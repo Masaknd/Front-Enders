@@ -15,7 +15,7 @@ module.exports = {
         serif: ["Hanuman", "serif"],
         sans: ["Poppins", "sans-serif"],
         logo: ["Antonio"],
-        ja: [YakuHanJP, "Zen Kaku Gothic New"],
+        ja: ["YakuHanJP", "Zen Kaku Gothic New"],
       },
       letterSpacing: {
         widest: ".3em",
